@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+    <bean name="hello" class="com.bitswild.myspring.HelloWorld">
+        <property name="text" value="Hello World!"/>
+    </bean>
+    <bean name="referenceBean" class="com.bitswild.myspring.ReferenceBean">
+        <property name="hello" ref="hello"/>
+    </bean>
+</beans>
